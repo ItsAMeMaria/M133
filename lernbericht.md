@@ -11,30 +11,41 @@ In diesem Modul habe ich ich zum Bespiel, outputLabels, InputTexte und commandLi
 
 ## Beschreibung
 
-✍️ Verwenden Sie drei verschiedene Medien, um zu zeigen, was Sie gelernt haben. Zum Beispiel:
+Auf einer Seite sieht man Text (auch mit einer SessionId), einen Feld wo man einen Inout geben kann (hier den Nachnamen) und einen Link. Dieser soll dann zur andere Seite führen.
 
-* Eine textliche Beschreibung
-* Ein deutliches, aussagekräftiges Bild oder eine kommentierte Bildschirm-Aufnahme
+##### Das ist der Code:
+``` Java
+        <h:form> 
+            <!-- output SessionId-->
+            <h:outputLabel id="id" value="Ihre Sitzung wurde eröffnet: #{helloManagedBean.id}"/> 
+            <br/>
+            <h:outputLabel for="nachname" value="Ihr Nachname"/> 
+            <!-- Input for lastname with a Bean-->
+            <h:inputText value="#{helloManagedBean.nachname}" id="nachname"/>
+            <br/>
+            <!-- Link to next Site-->
+            <h:commandLink value="Schritt 2" action="schritt2.xhtml"/>
+        </h:form>
+```
 
+##### So sieht es aus:
 <img width="362" alt="image" src="https://user-images.githubusercontent.com/69591610/187167402-dde97ad9-4dad-4f4e-b6a0-7a1f1504e926.png">
 
-* blau: Hier sieht man wie der "h: outputLabel" den Text und die SessionId herausgibt.
-* pink: Hier sieht man, dass man einen Nachnamen eingeben kann (h: inputText)
-* grün: Das ist der "h:commandLink". Dieser Link führt zu der nächsten Seite.
-
-
-* Ein gut dokumentierter Code-Fetzen
-* Ein Link zu einem *selbst aufgenommenen* youtube-Video oder `.gif`.
+* blau: Hier sieht man wie der <h: outputLabel> den Text und die SessionId herausgibt.
+* pink: Hier sieht man, dass man einen Nachnamen eingeben kann (<h: inputText>).
+* grün: Das ist der <h: commandLink>. Dieser Link führt zu der nächsten Seite.
 
 ## Verifikation
 
-✍️ Erklären Sie kurz und bündig, inwiefern die von Ihnen verwendeten Medien zeigen, was Sie gelernt haben.
+Mit diesen Medien kann ich zeigen, dass ich mit outputLabels, InputTexte und commandLinks arbeiten kann.
 
 # Reflektion zum Arbeitsprozess
 
-👍 Immer pünktlich in den Unterricht gekommen.
-👍 Schnell und Richtig die JDK und das NetBeans installiert und mit Glasfish eingerichtet.
+* 👍 Immer pünktlich in den Unterricht gekommen.
+* 👍 Schnell und Richtig die JDK und das NetBeans installiert und mit Glasfish eingerichtet.
 
-👎 und etwas, was nicht gut lief.
+* 👎 Brauche einwenig lange um es zu verstehen / mit dem zuarbeiten.
 
-**VBV**: ✍️ Formulieren Sie davon ausgehend einen *handelbaren* Verbesserungsvorschlag.
+##### Verbesserungsvorschlag:
+Weiter im meinem Tempo arbeiten, aber doch sich auch mehr Mühe zugeben.
+
